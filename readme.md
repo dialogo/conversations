@@ -67,10 +67,34 @@ what each rating represents.
 - Unlockable Joke
 - When video is playing, if screen is touched, the option to go home will show overlaying the video.
 
-##Technical Features
+##Technical Specifications
 
-###Components
+###Workflow
+The project workflow is being managed by Yeoman.
+Bower will be used to add components to the project.
+
+###Raw Functionality
+This lists the functionality that the app needs to have.
 - HTML5 Audio Player
 - HTML5 Video Player
 - Local DB
+- Subtitles
+- Random mutes
+- Random text omissions
 - Touch events
+
+###Technical Requirements
+- Fast and optimized
+- Clean
+- Use Bootstrap but don't make it look like it.
+
+
+###Libraries
+
+###Resources
+- [Yeoman](http://yeoman.io)
+- [Bower]()
+- [Grunt]()
+- [jQuery]()
+- [Bootstrap SCSS]()
+- [Phone Gap]()
