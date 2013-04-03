@@ -16,81 +16,7 @@
         <!-- endbuild -->
     </head>
     <body>
-        <section id="splash-screen"></section>
-        <section id="name-entry">
-            <form action="">
-                <label for="name">Name</label><input type="text" name="name" id="name" placeholder="Enter Name">
-                <label class="radio" for="gender">Male <input type="radio" name="gender" value="Male"></label>
-                <label class="radio" for="gender">Female <input type="radio" name="gender" value="Female"></label>
-                <input class="btn btn-primary" type="submit" value="Save Name">
-            </form>
-        </section>
         
-        <section id="lessons">
-            <ul>
-                <li>
-                    <img src="http://placehold.it/200x150" alt="">
-                    <h3>Conversation Title</h3>
-                    <p>The U.S.A. Trilogy is a major work of American writer John Dos Passos, comprising the novels The 42nd 
-                    Parallel (1930); 1919, (1932); and The Big Money (1936). The three books were first published together 
-                    in a single volume titled U.S.A by Harcourt Brace in January, 1938.</p>
-                </li>
-                <li>
-                    <img src="http://placehold.it/200x150" alt="">
-                    <h3>Conversation Title</h3>
-                    <p>The U.S.A. Trilogy is a major work of American writer John Dos Passos, comprising the novels The 42nd 
-                    Parallel (1930); 1919, (1932); and The Big Money (1936). The three books were first published together 
-                    in a single volume titled U.S.A by Harcourt Brace in January, 1938.</p>
-                </li>
-                <li>
-                    <img src="http://placehold.it/200x150" alt="">
-                    <h3>Conversation Title</h3>
-                    <p>The U.S.A. Trilogy is a major work of American writer John Dos Passos, comprising the novels The 42nd 
-                    Parallel (1930); 1919, (1932); and The Big Money (1936). The three books were first published together 
-                    in a single volume titled U.S.A by Harcourt Brace in January, 1938.</p>
-                </li>
-                <li>
-                    <img src="http://placehold.it/200x150" alt="">
-                    <h3>Conversation Title</h3>
-                    <p>The U.S.A. Trilogy is a major work of American writer John Dos Passos, comprising the novels The 42nd 
-                    Parallel (1930); 1919, (1932); and The Big Money (1936). The three books were first published together 
-                    in a single volume titled U.S.A by Harcourt Brace in January, 1938.</p>
-                </li>
-                <li>
-                    <img src="http://placehold.it/200x150" alt="">
-                    <h3>Conversation Title</h3>
-                    <p>The U.S.A. Trilogy is a major work of American writer John Dos Passos, comprising the novels The 42nd 
-                    Parallel (1930); 1919, (1932); and The Big Money (1936). The three books were first published together 
-                    in a single volume titled U.S.A by Harcourt Brace in January, 1938.</p>
-                </li>
-                <li>
-                    <img src="http://placehold.it/200x150" alt="">
-                    <h3>Conversation Title</h3>
-                    <p>The U.S.A. Trilogy is a major work of American writer John Dos Passos, comprising the novels The 42nd 
-                    Parallel (1930); 1919, (1932); and The Big Money (1936). The three books were first published together 
-                    in a single volume titled U.S.A by Harcourt Brace in January, 1938.</p>
-                </li>
-            </ul>
-        </section>
-        
-        <section id="lesson">
-            <div class="video-container">
-                video player will go here
-            </div>
-            <ul class="captions">
-                <li>
-                    <p>You: Good Afternoon!</p>
-                </li>
-                <li>
-                    <p>Server: Good Afternoon!</p>
-                </li>
-                <li>
-                    <p>You: Good Afternoon!</p>
-                </li>
-            </ul>
-        </section>
-        
-        <section id="results"></section>
 
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
@@ -104,29 +30,23 @@
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
 
-        <!-- build:js scripts/main.js -->
+        <!-- build:js scripts/index.js -->
         <script src="components/jquery/jquery.js"></script>
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
-
-        <!-- build:js(.tmp) scripts/coffee.js -->
-        <script src="scripts/hello.js"></script>
+        <script src="components/backbone/test/vendor/underscore.js"></script>
+        <script src="components/backbone/backbone.js"></script>
+        <script src="scripts/config.js"></script>
         <!-- endbuild -->
 
         <!-- build:js scripts/plugins.js -->
         <script src="components/sass-bootstrap/js/bootstrap-affix.js"></script>
         <script src="components/sass-bootstrap/js/bootstrap-alert.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-dropdown.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-tooltip.js"></script>
         <script src="components/sass-bootstrap/js/bootstrap-modal.js"></script>
         <script src="components/sass-bootstrap/js/bootstrap-transition.js"></script>
         <script src="components/sass-bootstrap/js/bootstrap-button.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-popover.js"></script>
         <script src="components/sass-bootstrap/js/bootstrap-typeahead.js"></script>
         <script src="components/sass-bootstrap/js/bootstrap-carousel.js"></script>
         <script src="components/sass-bootstrap/js/bootstrap-scrollspy.js"></script>
         <script src="components/sass-bootstrap/js/bootstrap-collapse.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-tab.js"></script>
         <!-- endbuild -->
 </body>
 </html>
