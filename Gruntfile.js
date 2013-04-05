@@ -1,4 +1,4 @@
-// Generated on 2013-03-28 using generator-webapp 0.1.5
+// Generated on 2013-04-05 using generator-webapp 0.1.5
 'use strict';
 var lrSnippet = require('grunt-contrib-livereload/lib/utils').livereloadSnippet;
 var mountFolder = function (connect, dir) {
@@ -154,13 +154,22 @@ module.exports = function (grunt) {
         /*concat: {
             dist: {}
         },*/
-        
-        uglify: {
+        requirejs: {
             dist: {
-                files: {
-                    '<%= yeoman.dist %>/scripts/main.js': [
-                        '<%= yeoman.app %>/scripts/{,*/}*.js'
-                    ],
+                // Options: https://github.com/jrburke/r.js/blob/master/build/example.build.js
+                options: {
+                    // `name` and `out` is set by grunt-usemin
+                    baseUrl: 'app/scripts',
+                    optimize: 'none',
+                    // TODO: Figure out how to make sourcemaps work with grunt-usemin
+                    // https://github.com/yeoman/grunt-usemin/issues/30
+                    //generateSourceMaps: true,
+                    // required to support SourceMaps
+                    // http://requirejs.org/docs/errors.html#sourcemapcomments
+                    preserveLicenseComments: false,
+                    useStrict: true,
+                    wrap: true,
+                    //uglify2: {} // https://github.com/mishoo/UglifyJS2
                 }
             }
         },
@@ -270,6 +279,7 @@ module.exports = function (grunt) {
         'coffee',
         'compass:dist',
         'useminPrepare',
+        'requirejs',
         'imagemin',
         'htmlmin',
         'concat',

@@ -98,3 +98,14 @@ This lists the functionality that the app needs to have.
 - [jQuery]()
 - [Bootstrap SCSS]()
 - [Phone Gap]()
+
+###Structure
+####Models (LeBron James)
+- Lesson or Conversation
+- User
+
+####Views (Game)
+- Conversation Selection
+- Conversation Lesson
+
+####Controllers (Miami Heat)
