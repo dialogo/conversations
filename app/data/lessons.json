@@ -1,0 +1,16 @@
+{
+	"lesson": {
+		"name": "Name",
+		"duration": "00:00",
+		"videoFile": "video.mp4",
+		"audioFile": "audio.mp3",
+		"cues": {
+			"line": {
+				"start": "0:00",
+				"end": "0:03",
+				"caption": "Good morning",
+				"person": "user"
+			}
+		}
+	}
+}
