@@ -88,16 +88,11 @@ This lists the functionality that the app needs to have.
 - Clean
 - Use Bootstrap but don't make it look like it.
 
-
-###Libraries
-
-###Resources
-- [Yeoman](http://yeoman.io)
-- [Bower]()
-- [Grunt]()
-- [jQuery]()
-- [Bootstrap SCSS]()
-- [Phone Gap]()
+###Component To-Do
+- Video JS
+  - [Get current time of video](http://stackoverflow.com/questions/6380956/current-duration-time-of-html5-video)
+  - Have time as listener for captions
+  - Randomizer to remove phrases
 
 ###Structure
 ####Models (LeBron James)
@@ -109,3 +104,30 @@ This lists the functionality that the app needs to have.
 - Conversation Lesson
 
 ####Controllers (Miami Heat)
+
+###Data File
+Preliminary data file.  
+(TODO) See if it can be optimized
+
+```
+{
+	"lesson": {
+		"name": "Name",
+		"duration": "00:00",
+		"videoFile": "video.mp4",
+		"audioFile": "audio.mp3",
+		"cues": {
+			"line": {
+				"start": "0:00",
+				"end": "0:03",
+				"caption": "Good morning",
+				"person": "user"
+			}
+		}
+	}
+}
+```
+
+##Design
+
+###Inspiration
