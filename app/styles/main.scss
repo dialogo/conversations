@@ -1,6 +1,9 @@
 @import 'sass-bootstrap/lib/bootstrap';
 
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
-}
+// Partials
+@import 'partials/base';
+
+// Sections
+@import 'sections/app';
+@import 'sections/login';
+@import 'sections/lessons';

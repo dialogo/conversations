@@ -1,8 +1,6 @@
 /*global define */
 define([], function () {
     'use strict';
-
-    return '\'Allo \'Allo!';
 });
 
 
@@ -26,7 +24,7 @@ var LessonSelection = Backbone.View.extend({
 
 var LessonList = Backbone.Collection.extend({
 	// Need to understand what will happen here
-	model: Lesson
+	// model: Lesson
 });
 
 var LessonsRouter = Backbone.Router.extend({

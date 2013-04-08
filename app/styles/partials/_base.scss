@@ -1,0 +1,22 @@
+// Partials Imports
+@import 'grid';
+
+// Colors
+$mint-green: #2AA945;
+$white: #fafafa;
+$dev: #c33;
+
+// Color Assignments
+$color-bg: $mint-green;
+$color-text: $dev;
+$color-header: $white;
+$color-header-outside: $white;
+$color-shadows: $dev;
+$color-highlight: $dev;
+$color-elem-bg: $white;
+
+// GFX
+$gfx-path: '/images/gfx/';
+$bg-gfx: #{$gfx-path}#{'bg.png'};
+
+// Typography

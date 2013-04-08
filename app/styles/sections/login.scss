@@ -1,0 +1,34 @@
+.container {}
+
+.welcome-container {
+	margin-top: 128px;
+}
+
+.welcome-container h2 {
+	text-align: center;
+	text-shadow: 2px 2px 1px #222;
+	font-size: 46px;
+	color: $color-header-outside;
+}
+
+.login-container {
+	background: $color-elem-bg;
+	padding: 16px;
+	@include border-radius(4px);
+	@include box-shadow(1px 1px 6px #666);
+	
+	input[type=text] {
+		font-size: 26px;
+		height: auto;
+		padding: 6px;
+	}
+
+	.gender-select {
+		overflow: hidden;
+		
+		label {
+			float: left;
+			width: 50%;
+		}
+	}
+}
