@@ -9,6 +9,8 @@
 }
 
 .caption-container {
+    overflow: scroll;
+    height: 344px;
     ul {
         list-style-type: none;
         padding: 0;

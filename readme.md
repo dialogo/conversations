@@ -115,6 +115,13 @@ This lists the functionality that the app needs to have.
 
 ####Controllers (Miami Heat)
 
+###Suggested Technical Approach
+####Lesson Video
+The video will have a data sheet file that has cue points. These cue 
+points will be synched with the time of the video. I should run an 
+if statement if time is >== entry time and <== end time it should
+display the approapriate caption data in the ul.
+
 ###Data File
 Preliminary data file.  
 (TODO) See if it can be optimized
