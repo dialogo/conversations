@@ -10,6 +10,7 @@
   * - @include clear;
   * - @include linkTextOffscreen;
   * - @include quick-gradient(#98c9ef, 30%);
+  * - @include radial-gradient(#222, #484848)
   * - @include border-radius(5px);
   * - @include box-shadow(0px 0px #444);
   */
@@ -51,14 +52,24 @@
     }
 }
 
-@mixin quick-gradient($color) {
+@mixin quick-gradient($color, $amount) {
     background-color: $color;    
-    background-image: -webkit-gradient(linear, left top, left bottom, from(darken($color, 25%)), to($color)); 
-    background-image: -webkit-linear-gradient(top, darken($color, 25%), $color); 
-    background-image: -moz-linear-gradient(top, darken($color, 25%), $color); 
-    background-image: -ms-linear-gradient(top, darken($color, 25%), $color); 
-    background-image: -o-linear-gradient(top, darken($color, 25%), $color); 
-    background-image: linear-gradient(to bottom, darken($color, 25%), $color);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(darken($color, $amount)), to($color)); 
+    background-image: -webkit-linear-gradient(top, darken($color, $amount), $color); 
+    background-image: -moz-linear-gradient(top, darken($color, $amount), $color); 
+    background-image: -ms-linear-gradient(top, darken($color, $amount), $color); 
+    background-image: -o-linear-gradient(top, darken($color, $amount), $color); 
+    background-image: linear-gradient(to bottom, darken($color, $amount), $color);
+}
+
+@mixin radial-gradient($color1, $color2) {
+  background: $color1;
+  background: -moz-radial-gradient(center, ellipse cover,  $color1 0%, $color2 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$color1), color-stop(100%,$color2));
+  background: -webkit-radial-gradient(center, ellipse cover,  $color1 0%,$color2 100%);
+  background: -o-radial-gradient(center, ellipse cover,  $color1 0%,$color2 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  $color1 0%,$color2 100%);
+  background: radial-gradient(ellipse at center,  $color1 0%,$color2 100%);
 }
 
 

@@ -7,6 +7,16 @@ omission of the dialog. The dialog will be in written format
 won't have caption or audio.
 
 ##Screens
+
+- Splash 
+- New User
+- Login
+- Conversation(Lesson) Selection
+- Difficulty Selection
+- Evaluator prompt
+- Lesson
+- Evaluation
+
 ###Splash
 The splash screen will have a description of the app. 
 The description will be written and spoken.

@@ -3,9 +3,9 @@ require.config({
         jquery: '../components/jquery/jquery',
         bootstrap: 'vendor/bootstrap',
         underscore: '../components/underscore/underscore',
-        backbone: '../components/backbone/backbone'
+        backbone: '../components/backbone/backbone',
         // backbonelocalStorage: '../components/backbone.localStorage/backbone.localStorage'
-        // videojs: '../components/video-js',
+        videojs: 'vendor/video-js/video'
     },
     shim: {
         bootstrap: {
@@ -22,9 +22,13 @@ require.config({
     }
 });
 
-require(['app', 'jquery', 'bootstrap', 'underscore', 'backbone'], function (app, $, _, Backbone) {
-    'use strict';
-    // use app here
-    console.log(app);
-    console.log('Running jQuery %s', $().jquery);
+// require(['app', 'jquery', 'underscore', 'backbone', 'videojs'], function (app, $, _, Backbone) {
+//     'use strict';
+//     // use app here
+//     console.log(app);
+//     console.log('Running jQuery %s', Backbone);
+// });
+
+require(['app','jquery', 'underscore', 'backbone'], function ($, _, Backbone) {   // or, you could use these deps in a separate module using define
+
 });
