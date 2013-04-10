@@ -98,12 +98,6 @@ This lists the functionality that the app needs to have.
 - Clean
 - Use Bootstrap but don't make it look like it.
 
-###Component To-Do
-- Video JS
-  - [Get current time of video](http://stackoverflow.com/questions/6380956/current-duration-time-of-html5-video)
-  - Have time as listener for captions
-  - Randomizer to remove phrases
-
 ###Structure
 ####Models (LeBron James)
 - Lesson or Conversation
@@ -116,6 +110,14 @@ This lists the functionality that the app needs to have.
 ####Controllers (Miami Heat)
 
 ###Suggested Technical Approach
+
+####Components
+- Video JS
+  - [Get current time of video](http://stackoverflow.com/questions/6380956/current-duration-time-of-html5-video)
+  - Have time as listener for captions
+  - Randomizer to remove phrases
+  - <https://github.com/zurb/html5_video_voting/blob/master/javascripts/application.js>
+
 ####Lesson Video
 The video will have a data sheet file that has cue points. These cue 
 points will be synched with the time of the video. I should run an 
@@ -162,6 +164,12 @@ of explore California
 
 ```
 
+###Libraries
+- <http://damirfoy.com/iCheck/>
+
 ##Design
+- Fonts: ` @import url(http://fonts.googleapis.com/css?family=Domine:400,700|Neuton|PT+Sans|Satisfy|Merienda|Berkshire+Swash|Sanchez|Marko+One|Scada); `
 
 ###Inspiration
+- <http://pinterest.com/pin/31103053647864959/>
+- <http://pinterest.com/pin/31103053648477596/>

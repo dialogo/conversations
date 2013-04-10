@@ -22,13 +22,9 @@ require.config({
     }
 });
 
-// require(['app', 'jquery', 'underscore', 'backbone', 'videojs'], function (app, $, _, Backbone) {
-//     'use strict';
-//     // use app here
-//     console.log(app);
-//     console.log('Running jQuery %s', Backbone);
-// });
-
-require(['app','jquery', 'underscore', 'backbone'], function ($, _, Backbone) {   // or, you could use these deps in a separate module using define
-
+require(['app', 'jquery', 'underscore', 'backbone', 'videojs'], function (app, $, _, Backbone) {
+    'use strict';
+    // use app here
+    console.log("hey app! " + app);
+    app;
 });
