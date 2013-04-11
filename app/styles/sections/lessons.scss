@@ -1,26 +1,37 @@
 #lessons {
 
 	.lessons-container {
-		width: 940px;
+		width: 960px;
 		margin: 0 auto;
+		background: rgba(255,255,255,.3);
 	}
 
 	ul {
 		list-style-type: none;
 		padding: 0;
+		overflow: hidden;
 	}
 
 	li {
 		float: left;
-		width: 420px;
-		margin: 12px;
-		padding: 12px;
+		width: 445px;
+		height: 250px;
+		margin: 6px;
+		position: relative;
 		background: $color-elem-bg;
 		@include border-radius(5px);
-		@include box-shadow(1px 1px #666);
-	}
-
-	.btn {
-		float: right;
+		@include box-shadow(1px 1px 3px #999);
+		
+		.description {
+			background: rgba(50,50,50, .7);
+			position: absolute;
+			bottom: 0;
+			color: $color-text;
+			padding: 0 12px;
+			
+			h3 {
+				line-height: 20px;
+			}
+		}
 	}
 }

@@ -4,17 +4,19 @@
 
 // Colors
 $mint-green: #14D173;
+$mint-green-1: #3DFF9E;
 $white: #fafafa;
 $dev: #c33;
 
 // Color Assignments
 $color-bg: $mint-green;
-$color-text: $dev;
+$color-text: $white;
 $color-header: $white;
 $color-header-outside: $white;
 $color-shadows: $dev;
 $color-highlight: $dev;
 $color-elem-bg: $white;
+$color-elem-container: $mint-green-1;
 
 // GFX
 $gfx-path: '/images/gfx/';
