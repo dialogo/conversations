@@ -1,30 +1,132 @@
-require.config({
-    paths: {
-        jquery: '../components/jquery/jquery',
-        bootstrap: 'vendor/bootstrap',
-        underscore: '../components/underscore/underscore',
-        backbone: '../components/backbone/backbone',
-        // backbonelocalStorage: '../components/backbone.localStorage/backbone.localStorage'
-        videojs: 'vendor/video-js/video'
+/* 
+ * -------------
+ * Models
+ * -------------
+*/
+
+var User = Backbone.Model.extend({
+    // This model will create the user
+    // User name, gender, progress, score, unlockables
+});
+
+var Lesson = Backbone.Model.extend({
+    initialize: function(){
+        console.log("Lesson Model Initiatiated");
     },
-    shim: {
-        bootstrap: {
-            deps: ['jquery'],
-            exports: 'jquery'
-        },
-        underscore: {
-            exports: '_'
-        },
-        backbone: {
-          deps: ["underscore", "jquery"],
-          exports: "Backbone"
-        }
+
+    defaults: {
+        title:'Lesson',
+        description: '',
+        duration: '0:00',
+        levels: '5',
+        fileName: 'lesson'
     }
 });
 
-require(['app', 'jquery', 'underscore', 'backbone', 'videojs'], function (app, $, _, Backbone) {
-    'use strict';
-    // use app here
-    console.log("hey app! " + app);
-    app;
+/* 
+ * -------------
+ * Collections
+ * -------------
+*/
+
+var UserProgress = Backbone.Collection.extend({
+    model: User,
+
+    // lets save some user input and progress
+    // the values come from the user "login" page
+    // and the self evaluation.
+    localStorage: new Backbone.LocalStorage('conversation-helper'),
+
+    
+
 });
+
+var LessonList = Backbone.Collection.extend({
+    // Need to understand what will happen here
+    // model: Lesson
+    model: Lesson
+});
+
+var LessonExercise = Backbone.Collection.extend({
+    // This will make the individual lesson work
+    // This has the video player and captions
+});
+
+
+/* 
+ * -------------
+ * Views
+ * -------------
+*/
+
+var AppView = Backbone.View.extend({
+    // Top UI View of the App
+
+    el: 'body',
+
+    initialize: function(){
+        console.log("AppView initialized")
+    }
+});
+
+var LessonsView = Backbone.View.extend({
+    // This view will get the Lesson model
+    // and display the list of lessons
+    // need to figure out how the actual lesson
+    // will be displayed.
+
+    tagName: 'li',
+
+    events: {}
+});
+
+var Exercise = Backbone.View.extend({
+    // this will display the single lesson view
+    // we are dealing with a separate set of data
+    // which contains the video and subtitles
+});
+
+
+/* 
+ * -------------
+ * Routers
+ * -------------
+*/
+
+var LessonsRouter = Backbone.Router.extend({
+    // This will create the lessons router
+    // ie. /lesson/list or lesson/cafe
+    initialize: function(){
+        Backbone.history.start();
+    }
+});
+var UserRouter = Backbone.Router.extend({
+    // ie. /{username}
+});
+
+/* 
+ * -------------
+ * Launch App
+ * -------------
+*/
+
+var app = app || {};
+
+$(function () {
+    'use strict';
+
+    // kick things off by creating the `App`
+    new AppView();
+});
+
+/* 
+ * -------------
+ * Other
+ * -------------
+*/
+
+var videoCaptionManager = function(){
+    var currentTime;
+    // I need to listen to current video time at all times.
+};
+

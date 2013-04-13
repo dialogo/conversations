@@ -22,4 +22,11 @@ $color-elem-container: $mint-green-1;
 $gfx-path: '/images/gfx/';
 $bg-gfx: #{$gfx-path}#{'bg.png'};
 
-// Typography
+// Fonts
+@include font-face("Arsenal", font-files("/fonts/Arsenal/Arsenal-Regular-webfont.woff","/fonts/Arsenal/Arsenal-Regular-webfont.ttf", "/fonts/Arsenal/Arsenal-Regular-webfont.otf", "/fonts/Arsenal/Arsenal-Regular-webfont.svg"));
+@include font-face("Arsenal Bold", font-files("/fonts/Arsenal/Arsenal-Bold-webfont.woff","/fonts/Arsenal/Arsenal-Bold-webfont.ttf", "/fonts/Arsenal/Arsenal-Bold-webfont.otf", "/fonts/Arsenal/Arsenal-Bold-webfont.svg"));
+@include font-face("Colaborate", font-files("/fonts/Colaborate/ColabLig-webfont.woff","/fonts/Colaborate/ColabLig-webfont.ttf", "/fonts/Colaborate/ColabLig-webfont.otf", "/fonts/Colaborate/ColabLig-webfont.svg"));
+
+$header-font: "Arsenal";
+$paragraph-font: "Colaborate";
+$touch-font: "";

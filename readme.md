@@ -99,15 +99,18 @@ This lists the functionality that the app needs to have.
 - Use Bootstrap but don't make it look like it.
 
 ###Structure
-####Models (LeBron James)
+####Models (A Single Lesson or Single User)
 - Lesson or Conversation
 - User
+  - It will store the users personal info
+  - It will store the score of the self evaluation of the lesson
 
-####Views (Game)
+####Controllers (What we do with a Lesson or User)
+- 
+
+####Views (How we display)
 - Conversation Selection
 - Conversation Lesson
-
-####Controllers (Miami Heat)
 
 ###Suggested Technical Approach
 

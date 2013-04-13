@@ -1,3 +1,4 @@
+@import 'compass/css3';
 @import 'sass-bootstrap/lib/bootstrap';
 
 // Partials
@@ -5,6 +6,7 @@
 
 // Sections
 @import 'sections/app';
+@import 'sections/splash';
 @import 'sections/login';
 @import 'sections/lessons';
 @import 'sections/lesson';
