@@ -8,56 +8,27 @@ won't have caption or audio.
 
 ##Screens
 
-- Splash 
-- New User
-- Login
-- Conversation(Lesson) Selection
-- Difficulty Selection
-- Evaluator prompt
-- Lesson
-- Evaluation
-
-###Splash
-The splash screen will have a description of the app. 
+- **Splash** - The splash screen will have a description of the app. 
 The description will be written and spoken.
-
-###New User
-The user will enter in their name(textfield) and 
-their gender(checkmark). The app will save this 
-information locally.
-
-####Login Screen
-If the user has already registered their name and gender, 
+- **New User** - The user will enter in their name(textfield) and 
+their gender(checkmark). The app will save this information locally.
+- **Login** - If the user has already registered their name and gender, 
 a button will show their name to choose from.
-
-###Conversation Selection
-This screen will have a box list of the conversations that 
-are available and any future conversations. The user 
-will select the desired conversation.
-
-###Difficulty Level Selection
-This screen will have a one paragraph description of the 
-conversation that they chose. It will have a list of the 
-levels of difficulty and a description of what 
-difficulty level entails.
-
-####Evaluator prompt
-The app will ask the user if they have a caretaker, 
-speech pathologist to evaluate them or if 
-they will self evaluate.
-
-###Lesson
-The lesson screen will have the video player at the 
-top and on the bottom it will have the caption on 
-a waterfall format. The dialog that the person has to 
-repeat will be in a different visual indicator. The 
-video will display an overlay indicating their turn.
-
-###Evaluation
-The evaluation screen will be star based evaluation. The 
-user or caretaker will evaluate from 1 to 5. On this 
-screen it will have a textual reference of 
-what each rating represents.
+- **Conversation(Lesson) Selection** - This screen will have a box list 
+of the conversations that are available and any future conversations. 
+The user will select the desired conversation.
+- **Difficulty Selection** - This screen will have a one paragraph 
+description of the conversation that they chose. It will have a list 
+of the levels of difficulty and a description of what difficulty level entails.
+- **Evaluator prompt** - The app will ask the user if they have a caretaker, 
+speech pathologist to evaluate them or if they will self evaluate.
+- **Lesson** - The lesson screen will have the video player at the top 
+and on the bottom it will have the caption on a waterfall format. The 
+dialog that the person has to repeat will be in a different visual indicator. 
+The video will display an overlay indicating their turn.
+- **Evaluation** - The evaluation screen will be star based evaluation. 
+The user or caretaker will evaluate from 1 to 5. On this screen it will 
+have a textual reference of what each rating represents.
 
 ##Content
 - 3 conversations
@@ -82,6 +53,18 @@ what each rating represents.
 ###Workflow
 The project workflow is being managed by Yeoman.
 Bower will be used to add components to the project.
+
+###What does it need to do
+- Register user
+  - Record name
+  - Record progress
+  - Record Evaluation score
+- Lessons
+  - List them
+  - Launch individual one
+- Lesson
+  - Load captions
+  - Load video
 
 ###Raw Functionality
 This lists the functionality that the app needs to have.

@@ -17,17 +17,34 @@
     </head>
     <body>
     
+    <div id="temp"></div>
+    
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
+        
+        <script type="text/template" id="lessons-template" src="scripts/templates/lessons.js"></script>
+        <script type="text/template" id="welcome-template" src="scripts/templates/welcome.js">
+            <section id="login">
+        <div class="container row">
+            <div class="welcome-container span6 offset3">
+                <h2>Welcome</h2>
+                <div class="login-container">
+                    <p>Hello, if this is your first time</p>
+                    <form action="">
+                        <input type="text" name="name" id="name" placeholder="Enter Name">
+                        <div class="gender-select">
+                            <label class="radio" for="gender">Male <input type="radio" name="gender" value="Male"></label>
+                            <label class="radio" for="gender">Female <input type="radio" name="gender" value="Female"></label>
+                        </div>
+                        <input class="btn btn-primary" type="submit" value="Continue">
+                    </form>
+                    <p>or</p>
+                    <a href="/profiles" class="btn">Select Name</a>
+                </div>
+            </div>
+        </div>
+    </section></script>
 
         <!-- build:js scripts/main.js -->
         <script src="components/jquery/jquery.js"></script>

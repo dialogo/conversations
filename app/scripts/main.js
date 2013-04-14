@@ -35,9 +35,7 @@ var UserProgress = Backbone.Collection.extend({
     // lets save some user input and progress
     // the values come from the user "login" page
     // and the self evaluation.
-    localStorage: new Backbone.LocalStorage('conversation-helper'),
-
-    
+    localStorage: new Backbone.LocalStorage('conversation-helper')
 
 });
 
@@ -63,22 +61,37 @@ var AppView = Backbone.View.extend({
     // Top UI View of the App
 
     el: 'body',
+    template: $('#welcome-template').html(),
 
     initialize: function(){
-        console.log("AppView initialized")
+        // console.log(this.template)
+        this.render();
+    },
+
+    render: function(){
+        var tmpl = _.template(this.template);
+        this.$el.html(tmpl);
+
+        return this;
     }
+
 });
 
-var LessonsView = Backbone.View.extend({
-    // This view will get the Lesson model
-    // and display the list of lessons
-    // need to figure out how the actual lesson
-    // will be displayed.
+// var LessonsView = Backbone.View.extend({
+//     // This view will get the Lesson model
+//     // and display the list of lessons
+//     // need to figure out how the actual lesson
+//     // will be displayed.
 
-    tagName: 'li',
+//     template: $('#lessons-template').html(),
+//     tagName: 'li',
 
-    events: {}
-});
+//     render: function(){
+//         var tmpl = _.template(this.template);
+
+//         this.$el.html(tmpl(this.model.toJSON()));
+//     }
+// });
 
 var Exercise = Backbone.View.extend({
     // this will display the single lesson view
