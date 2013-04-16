@@ -9,20 +9,6 @@ var User = Backbone.Model.extend({
     // User name, gender, progress, score, unlockables
 });
 
-var Lesson = Backbone.Model.extend({
-    initialize: function(){
-        console.log("Lesson Model Initiatiated");
-    },
-
-    defaults: {
-        title:'Lesson',
-        description: '',
-        duration: '0:00',
-        levels: '5',
-        fileName: 'lesson'
-    }
-});
-
 /* 
  * -------------
  * Collections
@@ -39,12 +25,6 @@ var UserProgress = Backbone.Collection.extend({
 
 });
 
-var LessonList = Backbone.Collection.extend({
-    // Need to understand what will happen here
-    // model: Lesson
-    model: Lesson
-});
-
 var LessonExercise = Backbone.Collection.extend({
     // This will make the individual lesson work
     // This has the video player and captions
@@ -57,65 +37,12 @@ var LessonExercise = Backbone.Collection.extend({
  * -------------
 */
 
-var AppView = Backbone.View.extend({
-    // Top UI View of the App
-
-    el: 'body',
-    template: $('#welcome-template').html(),
-
-    initialize: function(){
-        // console.log(this.template)
-        this.render();
-    },
-
-    render: function(){
-        var tmpl = _.template(this.template);
-        this.$el.html(tmpl);
-
-        return this;
-    }
-
-});
-
-// var LessonsView = Backbone.View.extend({
-//     // This view will get the Lesson model
-//     // and display the list of lessons
-//     // need to figure out how the actual lesson
-//     // will be displayed.
-
-//     template: $('#lessons-template').html(),
-//     tagName: 'li',
-
-//     render: function(){
-//         var tmpl = _.template(this.template);
-
-//         this.$el.html(tmpl(this.model.toJSON()));
-//     }
-// });
-
 var Exercise = Backbone.View.extend({
     // this will display the single lesson view
     // we are dealing with a separate set of data
     // which contains the video and subtitles
 });
 
-
-/* 
- * -------------
- * Routers
- * -------------
-*/
-
-var LessonsRouter = Backbone.Router.extend({
-    // This will create the lessons router
-    // ie. /lesson/list or lesson/cafe
-    initialize: function(){
-        Backbone.history.start();
-    }
-});
-var UserRouter = Backbone.Router.extend({
-    // ie. /{username}
-});
 
 /* 
  * -------------
@@ -129,7 +56,7 @@ $(function () {
     'use strict';
 
     // kick things off by creating the `App`
-    new AppView();
+    new app.AppView();
 });
 
 /* 

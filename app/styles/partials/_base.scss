@@ -20,7 +20,6 @@ $color-elem-container: $mint-green-1;
 
 // GFX
 $gfx-path: '/images/gfx/';
-$bg-gfx: #{$gfx-path}#{'bg.png'};
 
 // Fonts
 @include font-face("Arsenal", font-files("/fonts/Arsenal/Arsenal-Regular-webfont.woff","/fonts/Arsenal/Arsenal-Regular-webfont.ttf", "/fonts/Arsenal/Arsenal-Regular-webfont.otf", "/fonts/Arsenal/Arsenal-Regular-webfont.svg"));
