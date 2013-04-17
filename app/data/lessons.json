@@ -1,6 +1,7 @@
 {
 	"lesson": {
-		"name": "Name",
+		"name": "name",
+		"title": "Title",
 		"duration": "00:00",
 		"videoFile": "video.mp4",
 		"audioFile": "audio.mp3",
