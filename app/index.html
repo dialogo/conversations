@@ -29,7 +29,7 @@
                 <h2>Welcome</h2>
                 <div class="login-container">
                     <p>Hello, if this is your first time</p>
-                    <form action="">
+                    <form action="/#/lessons">
                         <input type="text" name="name" id="name" placeholder="Enter Name">
                         <div class="gender-select">
                             <label class="radio" for="gender">Male <input type="radio" name="gender" value="Male"></label>
@@ -45,9 +45,11 @@
     </section></script>
 
         <!-- build:js scripts/plugins.js -->
+        <script src="components/json2/json2.js"></script>
         <script src="components/jquery/jquery.js"></script>
         <script src="components/underscore/underscore.js"></script>
         <script src="components/backbone/backbone.js"></script>
+        <script src="components/marionette/lib/backbone.marionette.js"></script>
         <script src="components/backbone.localStorage/backbone.localStorage.js"></script>
         <!-- endbuild -->
         

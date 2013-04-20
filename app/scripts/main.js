@@ -65,8 +65,3 @@ $(function () {
  * -------------
 */
 
-var videoCaptionManager = function(){
-    var currentTime;
-    // I need to listen to current video time at all times.
-};
-

@@ -6,9 +6,12 @@
 
 .welcome-container h2 {
 	text-align: center;
-	text-shadow: 2px 2px 1px #222;
-	font-size: 46px;
+	text-shadow: 1px 1px 1px #222;
 	color: $color-header-outside;
+	font: {
+		size: 64px;
+		family: $header-font;
+	}
 }
 
 .login-container {

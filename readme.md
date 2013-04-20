@@ -150,8 +150,9 @@ of explore California
 
 ```
 
-###Libraries
+###Libraries & Resources
 - <http://damirfoy.com/iCheck/>
+- <http://marionettejs.com/> or <https://github.com/marionettejs/backbone.marionette>
 
 ##Design
 - Fonts: ` @import url(http://fonts.googleapis.com/css?family=Domine:400,700|Neuton|PT+Sans|Satisfy|Merienda|Berkshire+Swash|Sanchez|Marko+One|Scada); `
